@@ -4,7 +4,7 @@ import { decrementCounter, incrementCounter, resetCounter } from '../services/Ac
 
 const Counter = () => {
 
-  const count = useSelector(state => state.count);
+  const count = useSelector(state => state.f_counter.count);
 
   // const {count} = useReducer(rootReducer, incrementCounter)
 
@@ -31,9 +31,9 @@ const Counter = () => {
         <h3 className="text-center">Count : {count} </h3>
 
         <div className="text-center my-4">
-          <button className='btn btn-success' onClick={handleIncrement}>Increment</button>
-          <button className='btn btn-primary mx-3' onClick={handleReset} disabled={count > 0 ? false : true} >Reset</button>
           <button className='btn btn-danger' onClick={handleDecrement} disabled={count > 0 ? false : true}>Decrement</button>
+          <button className='btn btn-primary mx-3' onClick={handleReset} disabled={count > 0 ? false : true} >Reset</button>
+          <button className='btn btn-success' onClick={handleIncrement}>Increment</button>
         </div>
 
     </div>
