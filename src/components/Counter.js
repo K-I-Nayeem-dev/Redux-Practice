@@ -32,7 +32,7 @@ const Counter = () => {
 
         <div className="text-center my-4">
           <button className='btn btn-danger' onClick={handleDecrement} disabled={count > 0 ? false : true}>Decrement</button>
-          <button className='btn btn-primary mx-3' onClick={handleReset} disabled={count > 0 ? false : true} >Reset</button>
+          {/* <button className='btn btn-primary mx-3' onClick={handleReset} disabled={count > 0 ? false : true} >Reset</button> */}
           <button className='btn btn-success' onClick={handleIncrement}>Increment</button>
         </div>
 
